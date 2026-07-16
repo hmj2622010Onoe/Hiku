@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b0cdcc9826f163e46b23a8735c899073
+guid: 7014863f4d27eea4582c3629f6bada20
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3476755108580648646
-    second: hiku_RedCard_0
+      213: 6214437227295516479
+    second: hiku_NormalRightHand_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hiku_RedCard_0
+      name: hiku_NormalRightHand_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 161
-        height: 161
+        x: 66
+        y: 61
+        width: 20
+        height: 33
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c669f1c95aef3030800000000000000
-      internalID: 3476755108580648646
+      spriteID: f37a9e39bbd1e3650800000000000000
+      internalID: 6214437227295516479
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c456d232d09159f4aad6f1a1ac528fae
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      hiku_RedCard_0: 3476755108580648646
+      hiku_NormalRightHand_0: 6214437227295516479
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -8,6 +8,10 @@ public class NumberController : MonoBehaviour
 	[SerializeField] TextMeshProUGUI flashMark;
 	[SerializeField] TextMeshProUGUI joker;
 
+	//[SerializeField] AudioClip cardSE1;
+	//[SerializeField] AudioClip cardSE2;
+	//[SerializeField] AudioClip cardSE3;
+
 	[SerializeField] int flashSpeed = 140;
 
 	public int answerScore = 0;
@@ -51,19 +55,23 @@ public class NumberController : MonoBehaviour
 
 				if (colorRed)
 				{ // トランプの種類決め
-					if (Random.Range(1, 2) == 1)   
+					if (Random.Range(1, 3) == 1)   
 					{ flashNum.color = Color.red; flashMark.color = Color.red; stMark = "♥"; }
 					else { flashNum.color = Color.red; flashMark.color = Color.red; stMark = "♦"; }
 					colorRed = false;
 				}
 				else { 					
-					if (Random.Range(1, 2) == 1)
+					if (Random.Range(1, 3) == 1)
 					{ flashNum.color = Color.black; flashMark.color = Color.black; stMark = "♠"; }
 					else { flashNum.color = Color.black; flashMark.color = Color.black; stMark = "♣"; }
 					colorRed = true;
 				}
 
 				flashNow += flashScore;
+
+				//if (Random.Range(1, 4) == 1) { AudioSource.PlayClipAtPoint(cardSE1, transform.position); }
+				//else (Random.Range(1, 3) == 1){ AudioSource.PlayClipAtPoint(cardSE2, transform.position); }
+				//else { AudioSource.PlayClipAtPoint(cardSE3, transform.position); }
 
 				flashNum.GetComponent<TextMeshProUGUI>().text = stNum.ToString();
 				flashMark.GetComponent<TextMeshProUGUI>().text = stMark.ToString();

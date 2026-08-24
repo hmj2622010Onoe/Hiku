@@ -9,6 +9,11 @@ public class CardContllorer : MonoBehaviour
 	[SerializeField] GameObject cardScoreUI;
 	[SerializeField] GameObject youWin;
 	[SerializeField] GameObject youLose;
+
+	//[SerializeField] AudioClip selectSE;
+	//[SerializeField] AudioClip RLCardSE;
+	//[SerializeField] AudioClip winSE;
+	//[SerializeField] AudioClip loseSE;
 	
 	[SerializeField] int cardStart;
 
@@ -47,6 +52,7 @@ public class CardContllorer : MonoBehaviour
 				transform.position = new Vector3(-7, -5, 0);
 				if (Keyboard.current.spaceKey.wasReleasedThisFrame)
 				{
+					//AudioSource.PlayClipAtPoint(selectSE, transform.position);
 					cardScoreText.SetActive(false);
 					cardScoreUI.SetActive(false);
 					Debug.Log("カードを選択しました");
@@ -73,6 +79,7 @@ public class CardContllorer : MonoBehaviour
 				{
 					if (cardNow < cardNumber - 1)
 					{
+						//AudioSource.PlayClipAtPoint(RLCardSE, transform.position);
 						plus = true;
 						timer = 20;
 					}
@@ -81,6 +88,7 @@ public class CardContllorer : MonoBehaviour
 				{
 					if (cardNow > 0)
 					{
+						//AudioSource.PlayClipAtPoint(RLCardSE, transform.position);
 						plus = false;
 						timer = 20;
 					}
@@ -101,10 +109,12 @@ public class CardContllorer : MonoBehaviour
 			{
 			if(NumberController.answerScore == cardScore) 
 				{
+					//AudioSource.PlayClipAtPoint(winSE, transform.position);
 					youWin.SetActive(true);
 				}
 			else
 				{
+					//AudioSource.PlayClipAtPoint(loseSE, transform.position);
 					youLose.SetActive(true);
 				}
 			}

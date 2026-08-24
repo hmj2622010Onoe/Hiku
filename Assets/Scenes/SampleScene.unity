@@ -2083,6 +2083,9 @@ MonoBehaviour:
   flashNum: {fileID: 525783550}
   flashMark: {fileID: 114320443}
   joker: {fileID: 1358174392}
+  cardSE1: {fileID: 8300000, guid: 4addb20a4fab07a4e8f993212dffc8b6, type: 3}
+  cardSE2: {fileID: 8300000, guid: bae38873c9b4bbc438eebbc270d3e995, type: 3}
+  cardSE3: {fileID: 8300000, guid: 81c91e0f1c339f049834527d95972ce2, type: 3}
   flashSpeed: 140
   answerScore: 0
 --- !u!1001 &1834891395

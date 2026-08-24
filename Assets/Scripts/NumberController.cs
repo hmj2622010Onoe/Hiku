@@ -8,9 +8,9 @@ public class NumberController : MonoBehaviour
 	[SerializeField] TextMeshProUGUI flashMark;
 	[SerializeField] TextMeshProUGUI joker;
 
-	//[SerializeField] AudioClip cardSE1;
-	//[SerializeField] AudioClip cardSE2;
-	//[SerializeField] AudioClip cardSE3;
+	[SerializeField] AudioClip cardSE1;
+	[SerializeField] AudioClip cardSE2;
+	[SerializeField] AudioClip cardSE3;
 
 	[SerializeField] int flashSpeed = 140;
 
@@ -69,9 +69,9 @@ public class NumberController : MonoBehaviour
 
 				flashNow += flashScore;
 
-				//if (Random.Range(1, 4) == 1) { AudioSource.PlayClipAtPoint(cardSE1, transform.position); }
-				//else (Random.Range(1, 3) == 1){ AudioSource.PlayClipAtPoint(cardSE2, transform.position); }
-				//else { AudioSource.PlayClipAtPoint(cardSE3, transform.position); }
+				if (Random.Range(1, 4) == 1)  AudioSource.PlayClipAtPoint(cardSE1, transform.position);
+				else if (Random.Range(1, 3) == 1)AudioSource.PlayClipAtPoint(cardSE2, transform.position); 
+				else AudioSource.PlayClipAtPoint(cardSE3, transform.position); 
 
 				flashNum.GetComponent<TextMeshProUGUI>().text = stNum.ToString();
 				flashMark.GetComponent<TextMeshProUGUI>().text = stMark.ToString();
